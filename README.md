@@ -105,8 +105,48 @@ The main.exe program (on windows), main.hex (loaded into the microcontroller) ar
 - Often read-only, to prevent a program from accidentally modifying its instructions.
 - Store constants and pointers of char type.
 - All variables stored in the Text segment cannot change their values ​​but can only be read.
+### Data segment/ Initialized Data Segment
+- Contains global and static variables initialized to a non-zero value.
+- The value of the variable can be read and changed.
+- All variables will be reclaimed after the program ends.
+### BSS segment/ Uninitialized Data Segment
+- Contains global and static variables initialized with a value of 0 or not assigned a value.
+- The value of the variable can be read and changed.
+- All variables will be reclaimed after the program ends.
+### Stack
+- Contains local variables and passed parameters.
+- Can read and change the value of the variable during the program's runtime.
+- After exiting the function, the memory area will be reclaimed.
+### Heap
+- The heap is used to dynamically allocate memory during program execution.
+- This allows the program to create and release memory as needed, adapting to changes in data during runtime.
+- Functions like malloc(), calloc(), realloc(), and free() are used to allocate and free memory on the heap.
+- Can read and change the value of the variable during the program's runtime.
 
 
+</details>
+
+<details>  
+<summary>  Lesson 5 </summary> 
+  
+## EXTERN - STATIC - VOLATILE - REGISTER
+### EXTERN
+- Used to notify that a variable or function has been declared elsewhere in the program or in another source file.
+- This helps the program understand that the variable or function has been defined and will be used from another location, helping to manage associations between different parts of the program or between source files.
+- Variables or functions declared with “extern” in C will have external linkage, indicating that they are linked externally.
+- In a lengthy program that utilizes several files, the “extern” keyword is frequently employed to declare global variables in header files.
+### STATIC
+- Contains global and static variables initialized to a non-zero value.
+- The value of the variable can be read and changed.
+- All variables will be reclaimed after the program ends.
+### VOLATILE
+- Contains global and static variables initialized with a value of 0 or not assigned a value.
+- The value of the variable can be read and changed.
+- All variables will be reclaimed after the program ends.
+### REGISTER
+- Contains local variables and passed parameters.
+- Can read and change the value of the variable during the program's runtime.
+- After exiting the function, the memory area will be reclaimed.
 
 
 </details>
