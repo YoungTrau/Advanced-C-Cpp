@@ -122,8 +122,6 @@ The main.exe program (on windows), main.hex (loaded into the microcontroller) ar
 - This allows the program to create and release memory as needed, adapting to changes in data during runtime.
 - Functions like malloc(), calloc(), realloc(), and free() are used to allocate and free memory on the heap.
 - Can read and change the value of the variable during the program's runtime.
-
-
 </details>
 
 <details>  
@@ -146,7 +144,6 @@ The main.exe program (on windows), main.hex (loaded into the microcontroller) ar
 - May be stored in a computer register, rather than in RAM memory which lead to the increasing of accessing speed.
 - Using register is only a recommendation to the compiler and does not guarantee that the variable will be stored in the register.
 - The compiler may decide not to comply with this recommendation.
-
 </details>
 
 <details>  
@@ -160,8 +157,8 @@ The main.exe program (on windows), main.hex (loaded into the microcontroller) ar
 ### SETJMP.H
 - **setjmp.h** is a library in the C programming language, providing two main functions: setjmp and longjmp.
 - Both of these functions are commonly used to perform exception handling in C, although it is not a typical way to handle exceptions in the language.
-
 </details>
+
 <details>  
 <summary>  Lesson 7 </summary> 
   
@@ -187,7 +184,54 @@ The main.exe program (on windows), main.hex (loaded into the microcontroller) ar
 - Syntax: `int resultLeftShift = num << shiftAmount;`
 - In the case of >>, the bits on the left will be shifted to the right, and the bits on the right will be set to 0 or 1 depending on the value of the highest bit (sign bit).
 - Syntax: `int resultRightShift = num >> shiftAmount;`
-
 </details>
 
+<details>  
+<summary>  Lesson 8 </summary> 
+  
+## STRUCT - UNION
+### Struct
+- A struct is a data structure that allows programmers to define a new data type by grouping together variables of different data types.
+- Struct allows creating a larger and more organized data entity from its members.
+- Syntax:
+```
+struct structureName {
+  dataType member1;
+  dataType member2;
+  ...
+};
+```
+### Union
+- Union is a data structure that helps programmers combine many different data types into the same memory area.
+- The main purpose of union is to save memory by sharing the same memory area among its members.
+- At a time, only one member of the union can be used.
+- Syntax: 
+```
+union unionName {
+  dataType member1;
+  dataType member2;
+  ...
+};
+```
+</details>
 
+<details>  
+<summary>  Lesson 9 </summary> 
+  
+## JSON
+- JSON stands for "JavaScript Object Notation".
+- JSON is a common data transfer format in programming and communication between web servers and browsers, as well as between different systems.
+- JSON is designed to be easy to read and write for humans, as well as easy to parse and generate for computers.
+- It uses a lightweight syntax based on key - value pairs, similar to objects and arrays in JavaScript.
+- Each JSON object consists of a set of "key" and "value" pairs, while each JSON array is a set of values.
+</details>
+
+<details>  
+<summary>  Lesson 10 </summary> 
+  
+## LINKED LIST
+- Linked list is a data structure in computer programming, used to organize and store data.
+- Linked List is a linear data structure, in which elements are not stored at a contiguous location, rather they are linked using pointers.
+- A linked list consists of a chain of "nodes", each containing a data value and a pointer to the next node in the chain.
+
+</details>
