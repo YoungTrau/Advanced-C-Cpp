@@ -136,17 +136,58 @@ The main.exe program (on windows), main.hex (loaded into the microcontroller) ar
 - Variables or functions declared with “extern” in C will have external linkage, indicating that they are linked externally.
 - In a lengthy program that utilizes several files, the “extern” keyword is frequently employed to declare global variables in header files.
 ### STATIC
-- Contains global and static variables initialized to a non-zero value.
-- The value of the variable can be read and changed.
-- All variables will be reclaimed after the program ends.
+- **Static local variables:** declared within a function, it holds the variable's value across function calls and keeps the variable's scope within that function only.
+- **Static global variables:** declared outside the function, it limits the scope of that variable to only the current source file, used to design library files.
 ### VOLATILE
-- Contains global and static variables initialized with a value of 0 or not assigned a value.
-- The value of the variable can be read and changed.
-- All variables will be reclaimed after the program ends.
+- Signal to the compiler that a variable may change randomly, beyond the control of the program.
+- Prevents the compiler from optimizing or removing operations on that variable, keeping operations on the variable performed as defined.
 ### REGISTER
-- Contains local variables and passed parameters.
-- Can read and change the value of the variable during the program's runtime.
-- After exiting the function, the memory area will be reclaimed.
-
+- Used to indicate the programmer's intention that a variable be used frequently.
+- May be stored in a computer register, rather than in RAM memory which lead to the increasing of accessing speed.
+- Using register is only a recommendation to the compiler and does not guarantee that the variable will be stored in the register.
+- The compiler may decide not to comply with this recommendation.
 
 </details>
+
+<details>  
+<summary>  Lesson 6 </summary> 
+  
+## GOTO - SETJMP.H
+### GOTO
+- Allows a program to jump to a label that was previously placed in the same function.
+- Provides control over the flow of a program.
+- The use of **goto** is generally considered bad because it can make the source code difficult to read and maintain.
+### SETJMP.H
+- **setjmp.h** is a library in the C programming language, providing two main functions: setjmp and longjmp.
+- Both of these functions are commonly used to perform exception handling in C, although it is not a typical way to handle exceptions in the language.
+
+</details>
+<details>  
+<summary>  Lesson 5 </summary> 
+  
+## BITMASK
+- A technique that uses bits to store and manipulate flags or status.
+- Can be used to set, clear, and check the state of specific bits within a word.
+- Bitmasks are commonly used to optimize memory, perform logical operations on a cluster of bits, and manage the state, access rights, or other properties of an object.
+### NOT bitwise
+- Used to perform bitwise NOT operations on each bit of a number. The result is the bitwise inverse of that number.
+- Syntax: `int result = ~num;`
+### AND bitwise
+- Used to perform bitwise AND operations between each pair of bits of two numbers. The result is 1 if both corresponding bits are 1, otherwise 0.
+- Syntax: `int result = num1 & num2;`
+### OR bitwise
+- Used to perform bitwise OR operations between each pair of bits of two numbers. The result is 1 if more than one corresponding bit is 1.
+- Syntax: `int result = num1 | num2;`
+### XOR bitwise
+- Used to perform bitwise XOR between each pair of bits of two numbers. The result is 1 if only one corresponding bit is 1.
+- Syntax: `int result = num1 ^ num2;`
+### Shift left và Shift right bitwise
+- Used to move bits left or right.
+- In the case of <<, the bits on the right will be shifted to the left, and the bits on the left will be set to 0.
+- Syntax: `int resultLeftShift = num << shiftAmount;`
+- In the case of >>, the bits on the left will be shifted to the right, and the bits on the right will be set to 0 or 1 depending on the value of the highest bit (sign bit).
+- Syntax: `int resultRightShift = num >> shiftAmount;`
+
+</details>
+
+
