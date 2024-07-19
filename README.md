@@ -163,7 +163,7 @@ The main.exe program (on windows), main.hex (loaded into the microcontroller) ar
 
 </details>
 <details>  
-<summary>  Lesson 5 </summary> 
+<summary>  Lesson 7 </summary> 
   
 ## BITMASK
 - A technique that uses bits to store and manipulate flags or status.
