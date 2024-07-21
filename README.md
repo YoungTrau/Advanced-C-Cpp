@@ -235,3 +235,33 @@ union unionName {
 - A linked list consists of a chain of "nodes", each containing a data value and a pointer to the next node in the chain.
 
 </details>
+
+<details>  
+<summary>  Lesson 11 </summary> 
+  
+## JSON
+- JSON stands for "JavaScript Object Notation".
+- JSON is a common data transfer format in programming and communication between web servers and browsers, as well as between different systems.
+- JSON is designed to be easy to read and write for humans, as well as easy to parse and generate for computers.
+- It uses a lightweight syntax based on key - value pairs, similar to objects and arrays in JavaScript.
+- Each JSON object consists of a set of "key" and "value" pairs, while each JSON array is a set of values.
+</details>
+
+<details>  
+<summary>  Lesson 12 </summary> 
+  
+## STACK - QUEQUE
+### Stack
+- Stack is a data structure that follows the "Last In, First Out" (LIFO) principle, meaning that the last element added to the stack will be the first element removed.
+- Basic operations on the stack include:
+  - **push:** to add an element to the top of the stack
+  - **pop:** to remove an element at the top of the stack.
+  - **top:** to get the value of the element at the top of the stack.
+### Queque
+- Queue is a data structure that follows the "First In, First Out" (FIFO) principle, meaning that the first element added to the queue will be the first element removed.
+- Basic operations on queues include:
+  - **enqueue:** add elements to the end of the queue
+  - **dequeue:** get elements from the beginning of the queue.
+  - **front:** get the value of the element at the top of the queue.
+
+</details>
