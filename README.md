@@ -71,7 +71,7 @@ Pointers are one of the core components of the C programming language. A pointer
 - Syntax: `void *ptr_void;`
 ### Function Pointer
 - Pointer to function is a variable that holds the address of a function. That is, it points to the area in memory that contains the machine code of the function defined in the program.  
-- In the C programming language, function pointers allow you to pass a function as an argument to another function, store the function's address in a data structure, or even pass the function as a return value. from another function.
+- In the C programming language, function pointers allow you to pass a function as an argument to another function, store the function's address in a data structure, or even pass the function as a return value from another function.
 ### Pointer to Constant
 - A way to define a pointer that cannot change the value at the address it points to through dereference, but the value at that address can change.
 - Syntax: 
