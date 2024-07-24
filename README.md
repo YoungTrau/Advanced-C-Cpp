@@ -270,15 +270,28 @@ union unionName {
 <details> 
 <summary>  Lesson 13 </summary> 
   
-## CLASS - OBJECT
+## CLASS
 ### Class
-- A class is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class.
+- Class is a fundamental block of a program that has its own set of methods and variables.
+- You can access these methods and variables by creating an object or the instance of the class.
+- A class is a collection of objects of the same kind.
 - A C++ class is like a blueprint for an object.
-### Queque
-- Queue is a data structure that follows the "First In, First Out" (FIFO) principle, meaning that the first element added to the queue will be the first element removed.
-- Basic operations on queues include:
-  - **enqueue:** add elements to the end of the queue
-  - **dequeue:** get elements from the beginning of the queue.
-  - **front:** get the value of the element at the top of the queue.
+### Object
+- An object is a recognizable entity having a state and behavior, and these objects hold variables of a class in accordance with the access modifiers.
+- It is also known as an instance of a class.
+- You can call a member function with the help object and use the dot operator.
+- During the declaration of the class, no memory is assigned, but when you create an object, then the memory is allocated.
+### Constructor
+- Whenever you create an object of a class, a constructor is invoked, and that is why it is called a special member function.
+- The constructor's name is like that of the class, and it doesn’t have any return type.
+- Even if you do not include a constructor in the class, the compiler creates a default constructor.
+- These are generally used for assigning initial values to variables.
+### Destructor
+- Destructor is another special member function that is called by the compiler when the scope of the object ends.
+- It deallocates all the memory previously used by the object of the class so that there will be no memory leaks.
+### Class method
+- Class methods – also known as member functions – are functions defined inside a class that operates on the class objects.
+- They access the class's data members and other member functions and define the behavior or actions that objects of the class can perform.
+- Class methods are declared and defined within the class definition itself or defined outside the class definition.
 
 </details>
